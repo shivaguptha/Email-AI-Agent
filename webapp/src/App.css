@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0e1117;
+  color: #e4e6eb;
+  line-height: 1.6;
+}
+
+.App {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding: 2rem;
+  background: #161b22;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.email-card {
+  display: flex;
+  flex-direction: column;
+  background: #161b22;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 0 12px rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 340px;
+  overflow: auto;
+  margin: 10px;
+}
+
+.email-card:hover {
+  background: rgba(238, 238, 255, 0.719);
+  color: #0d1117;
+}
+
+.email-card.selected {
+  color: #0d1117;
+  background: #d3d3d3;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #58a6ff;
+  text-align: center;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  margin: 1rem 0.5rem;
+  background: linear-gradient(135deg, #238636, #2ea043);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2ea043, #238636);
+}
+
+textarea {
+  width: 90%;
+  background: #0d1117;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+  resize: vertical;
+  margin-top: 1rem;
+  margin-right: 50px;
+
+}
+
+.email-info {
+  display: flex;
+  flex-direction: column;
+  background: #161b22;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 90%;
+  overflow-x: auto;
+  margin: 10px;
+}
+
+.email-info p {
+  margin: 0.5rem 0;
+}
+
+button:disabled {
+  background: #444c56;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.button-loading::after {
+  content: " ⏳";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
