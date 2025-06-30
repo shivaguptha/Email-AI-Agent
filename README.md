@@ -62,6 +62,9 @@ An intelligent email assistant that reads incoming messages, understands their i
 5. **User Approval & Send**  
    User sees the draft in the web UI, can edit it, and hit "Send" to dispatch it via Gmail.
 
+Video Demo
+[![Watch the Demo](thumbnail.png)]([https://www.youtube.com/watch?v=VIDEO_ID](https://drive.google.com/file/d/12bo4zQirW7gnNj7zlk1d1GtYc_dWuacj/view?usp=drivesdk ))
+
 ---
 
 ## 🔐 Authentication
